@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asynchronous JavaScript with Node.js</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #5a5a5a;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 200px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #383838;
+        }
+        pre {
+            background: #eaeaea;
+            padding: 10px;
+            border-radius: 5px;
+            color: rgb(50, 50, 50);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Asynchronous JavaScript with Node.js</h1>
+        <h2>Callback Method</h2>
+        <pre id="callback-result">Loading...</pre>
+        <h2>Promise Method</h2>
+        <pre id="promise-result">Loading...</pre>
+    </div>
+    <script>
+        async function fetchData(url, elementId) {
+            const response = await fetch(url);
+            const text = await response.text();
+            document.getElementById(elementId).textContent = text;
+        }
+
+        fetchData('/read-file-callback', 'callback-result');
+        fetchData('/read-file-promise', 'promise-result');
+    </script>
+</body>
+</html>
