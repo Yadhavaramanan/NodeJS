@@ -1,16 +1,15 @@
 {
-  "dependencies": {
-    "express": "^4.19.2"
-  },
-  "name": "yadhavaexp4",
+  "name": "yadhavaexp5",
   "version": "1.0.0",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
 }

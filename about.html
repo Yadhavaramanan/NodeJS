@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>About</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -18,11 +18,9 @@
             padding: 20px;
             background: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            background: linear-gradient(50deg, white,hsl(0, 69%, 69%));
+            background:linear-gradient(50deg,rgb(225, 135, 139),white) ;
             border-radius: 15px;
-
         }
-
         h1 {
             text-align: center;
         }
@@ -34,29 +32,32 @@
             color: #007bff;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
-        }
         a:active{
             color: brown;
         }
         a:visited{
             color: blueviolet;
         }
+        a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Our Express.js Application</h1>
+        <h1>About Express.js</h1>
+
         <p>
-            This is the homepage of our Express.js application. Express.js is a minimal and
-            flexible Node.js web application framework
-            that provides a robust set of features for building web and mobile applications. It
-            simplifies the process of routing,
-            handling requests, and serving static files.
+            Express.js is a popular web application framework for Node.js. It provides a
+            minimal and flexible set of tools for building web applications and APIs. Express simplifies the process of routing, handling
+            HTTP requests, and managing middleware, making it easier to build robust and scalable web applications.
         </p>
         <p>
-            Click <a href="/about">here</a> to learn more about Express.js.
+            Express is known for its simplicity and ease of use, and it is a key component of the
+            MEAN (MongoDB, Express, Angular, Node.js) and MERN (MongoDB, Express, React, Node.js) stacks.
+        </p>
+        <p>
+            Click <a href="/">here</a> to return to the homepage.
         </p>
     </div>
 </body>
